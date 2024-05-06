@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: Verdana, sans-serif;
+        
+        }
+        nav{
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+            padding-left: 16px;
+            padding-right: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0;
+            z-index: 1;
+            box-shadow: 0 4px 2px -1px rgba(0, 0, 0, 0.2);
+        }
+        .title{
+            display: flex;
+            font-size: 17px;
+            letter-spacing: 3px;
+        }
+        .menu{
+            display: flex;
+            gap: 25px;
+        }
+        .menu a{
+            text-decoration: none;
+            font-size: 17px;
+            color: black;
+            letter-spacing: 3px;
+            
+        }
+        .title span{
+            margin-right: 9px;
+        }
+      .web-body{
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+     .home{
+        position: relative;
+        height: 100vh;
+        margin-bottom: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: aqua;
+     }
+     .home img{
+        width: 100%;
+        height: 100%;
+     }
+      .home-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      } 
+      .home-title{
+        display: flex;
+      } 
+      .home-title h2{
+        background-color: rgb(0, 0, 0,0.7);
+        color: whitesmoke;
+        font-size: 2.5rem;
+        padding: 15px;
+      }
+      .home-title p{
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        margin-left: 10px;
+      }
+      #projects p:first-child,.about p:first-child{
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+      hr{
+        margin-bottom: 30px;
+        border: 1px solid #eee;
+      }
+      .project-items{
+        width: 23.95%;
+        height: 250px;
+        
+        position: relative;
+     
+        margin-bottom: 20px;
+      }
+      .project-items img{
+        width: 100%;
+        height: 100%;
+        
+      }
+      .project-items p{
+        position: absolute;
+        top: 0px;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        padding: 8px 10px;
+      }
+      .project-holder,.about-mem{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        box-sizing: border-box;
+        
+      }
+      .members{
+        width: 23.95%;
+        
+      }
+      .about{
+        margin-top: 60px;
+      }
+      .about-mem{
+        gap: 15px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+      }
+      .members img{
+width: 100%;
+height: 250px;
+filter: grayscale(60%);
+margin-bottom: 15px;
+      }
+      .members p{
+margin-bottom: 15px;
+      }
+      .members p:nth-child(2){
+        font-size: 21px;
+      }
+      .members p:nth-child(3){
+        font-size: 14px;
+        color: gray;
+      }
+      .members button{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        font-size: 15px;
+      }
+     form{
+        display: flex;
+        flex-direction: column;
+     }
+     form p{
+        margin-bottom: 15px;
+     }
+     form input{
+        margin-bottom: 15px;
+        padding: 12px 5px;
+        border: 1px solid darkgrey;
+        
+     }
+     ::placeholder{
+        font-size: 17px;
+     }
+    input[type="submit"]{
+width: 160px;
+background-color: black;
+color: white;
+font-size: 16px;
+margin-top: 19px;
+margin-bottom: 39px;
+     }
+     footer{
+        background-color: black;
+        padding: 30px;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+     }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="title">
+            <span><p><b>BR</b></p></span><p>Architects</p>
+        </div>
+        <div class="menu">
+            <a href="#projects">Projects</a>
+            <a href="#aboutus">About</a>
+            <a href="#contactus">Contact</a>
+        </div>
+    </nav>
+   
+        <div class="home">
+            <img src="./Images/architect.jpg">
+            <div class="home-title">
+                <h2>BR</h2>
+                <p>Architects</p>
+            </div>
+        </div>
+        <div class="web-body">
+        <div id="projects">
+            <p>Projects</p>
+            <hr>
+            <div class="project-holder">
+                    <div class="project-items">
+                        <img src="./Images/house2.jpg">
+                        <p>Summer House</p>
+                    </div>
+                    <div class="project-items">
+                        <img src="./Images/house2 (1).jpg">
+                        <p>Brick House</p>
+                    </div>
+                    <div class="project-items">
+                        <img src="./Images/house3.jpg">
+                        <p>Renovated</p>
+                    </div>
+                    <div class="project-items">
+                        <img src="./Images/house3 (1).jpg">
+                        <p>Barn House</p>
+                    </div>
+                    <div class="project-items">
+                        <img src="./Images/house4 (1).jpg">
+                        <p>Summer House</p>
+                    </div>
+                    <div class="project-items">
+                        <img src="./Images/house4.jpg">
+                        <p>Brick House</p>
+                    </div>
+                    <div class="project-items">
+                        <img src="./Images/house5.jpg">
+                        <p>Renovated House</p>
+                    </div>
+                    <div class="project-items">
+                        <img src="./Images/house5 (1).jpg">
+                        <p>Barn House</p>
+                    </div>
+            </div>
+           
+        </div>
+        <div class="about" id="aboutus">
+<p>About</p>
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="about-mem">
+        <div class="members">
+            <img src="./Images/team2.jpg">
+            <p>John Doe</p>
+            <p>CE0 & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button>Contact</button>
+        </div>
+        <div class="members">
+            <img src="./Images/team1.jpg">
+            <p>Jane Doe</p>
+            <p>CE0 & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button>Contact</button>
+        </div>
+        <div class="members">
+            <img src="./Images/team3.jpg">
+            <p>Mike Ross</p>
+            <p>CE0 & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button>Contact</button>
+        </div>
+        <div class="members">
+            <img src="./Images/team4.jpg">
+            <p>Dan Star</p>
+            <p>CE0 & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button>Contact</button>
+        </div>
+    </div>
+</div>
+<div class="contact" id="contactus">
+    <p style="font-size: 25px;margin-bottom: 25px;">Contact</p>
+    <hr>
+    <form>
+        <p>Lets get in touch and talk about your next project.</p>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Subject">
+        <input type="text" placeholder="Comment">
+        <input type="submit" value="SEND MESSEGE">
+
+    </form>
+</div>
+<div class="map">
+    <img width="100%" src="./Images/map.jpg">
+</div>
+
+    </div>
+    <footer>
+        <p>Powered by <u>w3.css</u></p>
+    </footer>
+</body>
+</html>
